@@ -1,0 +1,33 @@
+body{
+    background-color: #ffc0cb;
+    width: 50%;
+    margin: 0 auto;
+}
+a {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+div {
+    text-align: center;
+    color: white
+}
+ol li {
+    font-size: 0.75em;  
+    padding: 2px
+}
+img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+    color: white;
+    text-align: center;
+}
+p {
+    color: black;
+    font-size: 0.75em;
+    text-align: center;
+}
