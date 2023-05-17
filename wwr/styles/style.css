@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Raleway&display=swap');
+
 #content {
     max-width: 1600px;
     margin: auto 0;
 }
-nav, a, #hero-msg h1, #hero-msg h4, .buttonbox, main section {
+nav, a, #hero-msg, .buttonbox, main section {
     text-align: center;
 }
 #background {
@@ -10,53 +12,105 @@ nav, a, #hero-msg h1, #hero-msg h4, .buttonbox, main section {
 }
 body {
     background-color: #6A041D;
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
 header {
     background-color: #FCE172;
+}
+#logo_link {
+    padding-top: 5px;
+}
+#hero-box img {
+    width: 100;
 }
 nav a {
     background-color: #134266;
     color: white;
     text-decoration: none;
+    font-family: "Autour One";
+    padding: 35px;
 }
 nav a:hover {
     background-color: #78C5D7;
     color:black
 }
+main section img {
+    box-sizing: border-box;
+}
+#hero-box img {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.home-title {
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    margin-top: 10px
+}
 .book, .join {
     background-color: #134266;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #78C5D7;
     color: black
 }
+.card-img {
+    border: solid 10px black
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
 .home-title {
     color: white
 }
+h2 {
+    margin: 0;
+}
 .msg {
     background-color: #FCE172;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg h2 {
+    font-family: "Autour One";
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #FCE172;
+    padding: 25px 50px;
 }
 footer p {
     font-size: 1.2em;
 }
-footer a {
+footer .self-links a {
     background-color: #134266;
     color: white;
     text-decoration: none;
 }
-footer a:hover {
+footer .self-links a:hover {
     background-color: #78C5D7;
     color: black;
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
 .logo {
     width: 80px;
 }
 .icon {
     width: 80 px;
+    padding-top: 10px;
 }
