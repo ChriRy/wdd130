@@ -180,6 +180,30 @@ footer .social {
     width: 80px;
     padding-top: 10px;
 }
+
+/*Rivers Page CSS   */
+.rivers h1 {
+    font-size: 2em;
+    color: white;
+    display: block;
+}
+.rivers img {
+    max-width: 500px;
+    z-index: 0;
+    box-shadow: 5px 5px 10px #6f7364;
+    border: solid 10px black;
+
+}
+#salmon_river, #desolation_utah, #grand_canyon p {
+    background-color: #FCE172;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
