@@ -68,7 +68,7 @@ main section img {
     grid-row: 1/2;
     margin-top: 100px;
 }
-main {
+main .home-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
@@ -182,23 +182,78 @@ footer .social {
 }
 
 /*Rivers Page CSS   */
-.rivers h1 {
-    font-size: 2em;
+/*Rivers label*/
+.rivers {
+    margin: 75px;
+}
+.river-page {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    border: dashed white 5px;
+}
+.river-page h1 {
     color: white;
+    font-size: 2.5em;
+}
+.river-page img {
+    max-width: 90px;
     display: block;
+    margin: auto auto;
 }
-.rivers img {
-    max-width: 500px;
-    z-index: 0;
-    box-shadow: 5px 5px 10px #6f7364;
-    border: solid 10px black;
-
-}
-#salmon_river, #desolation_utah, #grand_canyon p {
+/* Salmon River and Grand Canyon */
+.river-info {
     background-color: #FCE172;
+    grid-column: 3/7;
+    grid-row: 2/5;
+    z-index: 1;
+}
+.salmon-river, .grand-canyon {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    /* border: solid yellow 1px; */
+    margin-top: 50px
+}
+.salmon-river img, .grand-canyon img {
+    max-width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: 0;
+}
+.salmon-river h2, .grand-canyon h2 {
+    grid-column: 4/7;
+    margin: auto;
+    color: white;
+    text-decoration: underline;
+}
+.salmon-river p, .grand-canyon p {
+    padding: 5px 20px;
+    font-size: 0.85em;
+    z-index: 1;
+}
+/* Desolation Utah (reverse of salmon and grand canyon */
+.desolation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-top: 50px
+}
+.desolation img {
+    max-width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/6;
+    z-index: 0;
+}
+.desolation h2 {
+    grid-column: 4/7;
+    margin: auto;
+    color: white;
+    text-decoration: underline;
+}
+.desolation p {
+    padding: 5px 20px;
+    font-size: 0.85em;
+    z-index: 1;
 }
 
 
