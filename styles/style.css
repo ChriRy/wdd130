@@ -1,0 +1,102 @@
+/* style sheet for main wdd projects page */
+
+body {
+    background-color: #00ABE7;
+}
+
+/* heading */
+h1 {
+    text-align: center;
+    padding: 60px;
+    margin: 60px 20px;
+    border: 10px solid #EaD2Ac;
+    border-radius: 40px;
+    color: white;
+    background-color: #2dc7ff;
+}
+
+/* project grid */
+
+#main-grid {
+    margin: 40px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.projects a {
+    text-align: center;
+    padding: 30px;
+    border: 10px solid #EaD2Ac;
+    border-radius: 40px;   
+    text-decoration: none;
+    color: white;
+    background-color: #2dc7ff;
+
+}
+
+#aboutme {
+    grid-column: 1/2;
+}
+
+#positioning {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#wwr {
+    grid-column: 2/3
+}
+
+#wwr-siteplan {
+    grid-column: 2/3;
+}
+
+#piano {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#piano-siteplan {
+    grid-column: 3/4
+}
+
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50px;
+    padding: 5px;
+}
+
+/* footer */
+
+footer {
+    background-color: #0081af;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+}
+
+#footer-grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 250px);
+    text-align: center;
+    margin: 0 300px;
+    grid-gap: 30px
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: .75em;
+    color: black;
+    background-color: #eaba6b;
+    border-radius: 40px; 
+    padding: 5px;
+
+}
