@@ -2,6 +2,7 @@
 
 body {
     background-color: #00ABE7;
+    margin: 0px;
 }
 
 /* heading */
@@ -75,25 +76,24 @@ img {
 
 footer {
     background-color: #0081af;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    display: block;
     width: 100%;
-    padding: 40px;
+    height: fit-content;
+    padding: 20px;
 }
 
 #footer-grid {
     display: grid;
-    position: relative;
-    grid-template-columns: repeat(3, 250px);
+    position: flex;
+    grid-template-columns: repeat(6, 175px);
     text-align: center;
-    margin: 0 300px;
-    grid-gap: 30px
+    margin: auto auto;
+    grid-gap: 10px
 }
 
 .footer a {
     text-decoration: none;
-    font-size: .75em;
+    font-size: .60em;
     color: black;
     background-color: #eaba6b;
     border-radius: 40px; 
