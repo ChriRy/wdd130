@@ -80,7 +80,7 @@ nav a:hover {
 
 /* footer  */
 footer {
-    border: solid black 1px;
+    
     border-top: solid black 5px;
     border-bottom: solid black 5px;
     background-color: var(--accent1);
@@ -263,7 +263,6 @@ h1 {
 
 /* the actual questions and answers */
 #q-and-a {
-    border: solid black 1px;
     margin: 30px 150px;
 }
 .question-mark {
@@ -329,4 +328,99 @@ h1 {
 /* musescore */
 #musescore {
     max-width: 50px;
+}
+
+/* --------------------------------------------------Sheet Music------------------------------------------------------ */
+/* Sheet Music logo */
+#sheetmusic-box {
+    margin: 0px 150px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#sheetmusic-box img {
+    grid-column: 2/4;
+    max-width: 450px;
+    grid-row: 1/5;
+    z-index: 1;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+#title-3 {
+    margin: 0 0;
+    grid-column: 1/7;
+    z-index: 0;
+    text-align: right;
+    grid-row: 2/3;
+    padding-right: 310px;
+}
+#title-4 {
+    border: solid black 5px;
+    color: var(--accent1);
+    background-color: var(--secondary);
+    margin: 0 0;
+    padding-right: 300px;
+    z-index: 0;
+    grid-column: 1/7;
+    grid-row: 3/4;
+    text-align: right;
+}
+
+/* Sheet Music Main page */
+
+.sheetmusic-main {
+    margin: 30px 150px 0px 150px;
+}
+.sheetmusic-main p {
+    background-color: var(--secondary);
+    border-radius: 10px;
+    margin: 0px 30px;
+    grid-row: 2/3;
+    grid-column: 3/7;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    padding: 20px;
+}
+#sheetmusic-content {
+    display: grid;
+    object-fit: contain;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#content-1 {
+    margin: 40px 0px;
+}
+#song-list {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0px auto;
+    padding: 15px;
+    border: solid black 5px;
+    background-color: var(--accent1);
+    font-family: var(--paragraph-font);
+    list-style-type: none;
+}
+#song-list h2 {
+    color: white;
+}
+#song-list a {
+    display: block;
+    color: white;
+    margin: 15px 15px;
+    text-decoration: underline solid white;
+}
+#content-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#piano-keys {
+    display: block;
+    margin: 40px auto;
+    max-width: 600px;
+    object-fit: fill;
+    border-radius: 10px;
 }
