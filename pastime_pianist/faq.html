@@ -3,89 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
     <title>The Pastime Pianist</title>
   </head>
   <body>
     <!-- header -->
     <header>
-      <a href="index.html">
-        <img src="images/piano_logo.png" />
-      </a>
-      <nav>
-        <a href="sheetmusic.html">Sheet Music</a>
-        <a href="faq.html">FAQ's</a>
-        <a href="contact.html">Contact</a>
+      <nav class="site-links">
+        <a class="button" href="index.html">Home</a>
+        <a class="button" href="sheetmusic.html">Sheet Music</a>
+        <a href="index.html" id="logo">
+          <img src="images/piano_logo.png" alt="piano-logo">
+        </a>
+        <a class="button" href="faq.html">FAQ's</a>
+        <a class="button" href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <!-- main content -->
-    <main>
+    <!-- faq content -->
+    <main class="faq-main">
       <div id="faq-box">
-        <h1>Frequently Asked Questions</h1>
         <img src="images/music_and_laptop.jpg" />
+        <h1 id="title-1">Frequently</h1>
+        <h1 id="title-2">Asked</h1>
+        <h1 id="title-3">Questions</h1>
       </div>
-      <div>
-        <h4>Want to ask a question? Click here!</h4>
-        <button href="contact.html">Ask a question</button>
+      <div id="faq-question">
+        <h2>Want to ask a question? Click here!</h2>
+        <button class="button" href="contact.html">Ask a question</button>
       </div>
       <!-- the actual questions -->
       <div class="q-and-a">
         <!-- question one -->
-        <img src="images/question-mark.png" alt="question-mark" />
-        <p>How long have you been playing piano?</p>
-        <img src="images/arrow.png" alt="arrow" />
-        <p>12 years and counting</p>
-        <!-- question two -->
-        <img src="images/question-mark.png" alt="question-mark" />
-        <p>Where did you learn to write/arrange music?</p>
-        <img src="images/arrow.png" alt="arrow" />
-        <p>
-          There’s a lot behind that question. I’ve learned through experience
-          that there isn’t really one place to go to learn. Having a good
-          background in piano has definitely played a big part in it. A lot of
-          music theory goes into it, so learning that was important. A large
-          part of it was a friend of mine showing me how to work with the chords
-          of a song and kind of make it up as you go. That was a major turning
-          point for me and helped me get started with really composing and
-          arranging. But really the best way to learn is to just start doing it.
-          For a long time I was hoping to find a class or website or video that
-          would teach me exactly what I wanted to know. But ultimately, it was
-          by just sitting down and trying to do it that helped me the most. I
-          still have a lot to learn though, so if you have a background in music
-          or composition, I’d appreciate any constructive criticism you have to
-          offer.
-        </p>
-        <!-- question three -->
-        <img src="images/question-mark.png" alt="question-mark" />
-        <p>What program do you use to arrange?</p>
-        <img src="images/arrow.png" alt="arrow" />
-        <p>
-          To make nice looking sheet music, I use MuseScore 4, which is totally
-          free and you should definitely check it out if you’re looking for a
-          good notation program. But I prefer to start using pencil and paper to
-          work on music. I work it all out on paper, then use MuseScore as a
-          sort of spell check to help make sure all of my rhythms and notations
-          are correct.
-        </p>
+        <div id="question-1">
+          <img class="question-mark" src="images/question-mark.png" alt="question-mark" />
+          <p id="q1">How long have you been playing piano?</p>
+          <img class="arrow" src="images/arrow.png" alt="arrow" />
+          <p id="a1">12 years and counting</p>
+        </div>
+        <!-- question two
+        <div id="question-2">
+          <img class="question-mark" src="images/question-mark.png" alt="question-mark" />
+          <p>Where did you learn to write/arrange music?</p>
+          <img src="images/arrow.png" alt="arrow" />
+          <p>
+            There's a lot behind that question. I've learned through experience
+            that there isn't really one place to go to learn. Having a good
+            background in piano has definitely played a big part in it. A lot of
+            music theory goes into it, so learning that was important. A large
+            part of it was a friend of mine showing me how to work with the chords
+            of a song and kind of make it up as you go. That was a major turning
+            point for me and helped me get started with really composing and
+            arranging. But really the best way to learn is to just start doing it.
+            For a long time I was hoping to find a class or website or video that
+            would teach me exactly what I wanted to know. But ultimately, it was
+            by just sitting down and trying to do it that helped me the most. I
+            still have a lot to learn though, so if you have a background in music
+            or composition, I'd appreciate any constructive criticism you have to
+            offer.
+          </p>
+        </div>
+        question three 
+        <div id="question-3">
+          <img class="question-mark" src="images/question-mark.png" alt="question-mark" />
+          <p>What program do you use to arrange?</p>
+          <img src="images/arrow.png" alt="arrow" />
+          <p>
+            To make nice looking sheet music, I use MuseScore 4, which is totally
+            free and you should definitely check it out if you're looking for a
+            good notation program. But I prefer to start using pencil and paper to
+            work on music. I work it all out on paper, then use MuseScore as a
+            sort of spell check to help make sure all of my rhythms and notations
+            are correct.
+          </p>
+        </div> -->
       </div>
     </main>
 
     <!-- footer -->
     <footer>
-      <p>Pastime Pianist &copy; 2023 - Ryan Christensen</p>
-      <a href="site-plan.html">
-        Site Plan
-        <img src="images/icons8-wrench-100.png" />
+      <p id="copyright">Pastime Pianist &copy; 2023 - Ryan Christensen</p>
+      <a href="site-plan.html" id="siteplan-link">
+        <p>Site Plan</p>
+        <img src="images/icons8-wrench-100.png" alt="wrench icon">
       </a>
       <div id="social-media">
-        <a href="facebook">
-          <img src="images/facebook.png" />
+        <a href="https://www.facebook.com/login/">
+          <img src="images/facebook.png" alt="facebook logo">
         </a>
-        <a href="instagram">
-          <img src="images/instagram.png" />
+        <a href="https://www.instagram.com/">
+          <img src="images/instagram.png" alt="instagram logo">
         </a>
-        <a href="twitter">
-          <img src="images/twitter.png" />
+        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den">
+          <img src="images/twitter.png" alt="twitter logo">
         </a>
       </div>
     </footer>
