@@ -8,7 +8,7 @@ Fonts are separated by a | */
   --primary-color: #484A47   ;
   --secondary-color: #dfe0e2 ;
   --accent1-color: #D9594C;
-  --accent2-color: #f6aa1c;
+  --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Noto Serif","Abel";
@@ -21,7 +21,7 @@ Fonts are separated by a | */
   --paragraph-color-on-color: #dfe0e2; /* paragraph text on a colored background */ 
   --paragraph-background-color: #D9594C ;
   --nav-link-color: #dfe0e2;
-  --nav-background-color: #f6aa1c;
+  --nav-background-color: #D9594C;
   --nav-hover-link-color: #dfe0e2;
   --nav-hover-background-color: #D9594C;
 }
@@ -93,6 +93,7 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+  border: solid black 1px;
 }
 
 p.colored {

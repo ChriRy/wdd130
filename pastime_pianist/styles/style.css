@@ -306,7 +306,7 @@ h1 {
     text-align: center;
     padding: 20px 0px;
 }
-/* question 1 */
+/* questions */
 #question-1 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -347,7 +347,7 @@ h1 {
     margin: 20px 0px;
     border-radius: 10px;
 }
-#title-3 {
+#sheetmusic-box #title-3 {
     margin: 0 0;
     grid-column: 1/7;
     z-index: 0;
@@ -423,4 +423,27 @@ h1 {
     max-width: 600px;
     object-fit: fill;
     border-radius: 10px;
+}
+/* ------------------------------------------------------------Contact Us--------------------------------------------------- */
+
+#contact-main {
+    text-align: center;
+}
+#contact-main h1 {
+    margin: 40px 500px;
+    color: var(--accent1);
+    background: var(--secondary);
+    display: block;
+    border-radius: 10px;
+}
+#contact-main p {
+    background: var(--secondary);
+    font-family: var(--paragraph-font);
+    font-size: 1.25em;
+    margin: 0 0;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 150px;
+    margin-bottom: 300px;
+    display: block;
 }
